@@ -1,0 +1,111 @@
+.container {
+  width: 360px;
+  z-index: 10;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow:
+  0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);
+  -webkit-box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);;
+  -moz-box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);;
+}
+.btn {
+  margin-top: 10px;
+}
+.closeBtn {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  margin: 8.8px 0;
+}
+.closeBtn path {
+  fill: #2B3467;
+}
+.closeBtn {
+  transition: all 0.3s ease;
+}
+
+.closeBtn:hover {
+  opacity: 0.6;
+}
+
+.none {
+  display: none;
+}
+.borderBottom {
+  border-bottom: 1px solid #2B3467;
+}
+.borderBottom:hover {
+  border-bottom: 1px solid #BAD7E9;
+}
+.cursorNone {
+  cursor:auto !important;
+}
+.registrationBtn {
+  transition: all 0.3s ease;
+  color: #2B3467;
+  cursor: pointer;
+  margin-top: 10px;
+  width: fit-content;
+}
+.registrationBtn:hover {
+  color: #BAD7E9;
+}
+
+.noArrow::-webkit-inner-spin-button,
+.noArrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+.paymentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 380px;
+}
+
+.cardNumberInput {
+  font-size: 20px;
+  letter-spacing: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cardNumberInput:focus {
+  border-color: #007bff; 
+}
+
+.switcher {
+  width: 100%;
+}
+
+.switcher a {
+  width: 50%;
+}
+
+.cardNumberInput::after {
+  content: ' ';
+  display: inline-block;
+  width: 10px; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}

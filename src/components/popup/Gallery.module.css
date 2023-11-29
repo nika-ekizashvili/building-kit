@@ -1,0 +1,135 @@
+.galleryItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  margin-top: 50px;
+}
+.galleryItem {
+  width: calc(20% - 24px);
+  position: relative;
+  padding-top: calc(20% - 24px);
+  border: 1px solid #eff2f5;
+  border-radius: 4px;
+}
+.galleryItem img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.galleryItem:hover img {
+  transform: scale(1.05);
+}
+.addBtn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  left: 0px;
+  top: 0px;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.addBtn:hover {
+  background: #eb455f;
+}
+.addBtn span {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  text-align: center;
+}
+.addBtn:hover span {
+  color: #fff;
+}
+.addBtn svg {
+  margin-bottom: 15px;
+}
+.modalHeader h2 {
+  font-size: 2em;
+}
+.modalClose {
+  cursor: pointer;
+}
+.modalClose rect {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.modalClose:hover rect {
+  fill: #bad7e9;
+}
+.galleryItemBtns {
+  position: absolute;
+  top: -32px;
+  right: 0px;
+  z-index: 10;
+  display: flex;
+  gap: 5px;
+}
+.galleryItemImg {
+  position: absolute;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  left: 10px;
+  top: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.galleryItemBtn {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2b3467;
+  border-radius: 4px;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  cursor: pointer;
+}
+.galleryItemBtn:hover,
+.galleryItemBtn.active {
+  background: #2b3467;
+}
+.galleryItemBtn:hover svg {
+  fill: white;
+}
+.galleryItemBtns .galleryItemBtn svg {
+  height: 80% !important;
+  width: 80% !important;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.galleryItemBtn:last-child svg rect {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.galleryItemBtn:last-child:hover svg rect,
+.active.galleryItemBtn:last-child svg rect {
+  fill: #fff;
+}
+.galleryItemBtn:hover svg {
+  stroke: #fff;
+}
+
+.no_photo {
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .galleryItem {
+    width: calc(33.33% - 20px);
+    padding-top: calc(33.33% - 20px);
+  }
+}
+@media (max-width: 767px) {
+  .galleryItem {
+    width: calc(50% - 20px);
+    padding-top: calc(50% - 20px);
+  }
+  .modalHeader {
+    padding: 15px;
+  }
+}
