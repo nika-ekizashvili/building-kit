@@ -204,7 +204,7 @@ const Project = ({
   };
 
   const copyUrl = () => {
-    const copyText = `http://localhost:3000/share/${hashedUrl}`;
+    const copyText = `${process.env.NEXT_PUBLIC_BUILDING_URL}/share/${hashedUrl}`;
 
     navigator.clipboard.writeText(copyText)
       .then(() => {
